@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js">
+	
+	<title>LYMT</title>
+
+</head>
+<body data-ng-app="lymtApp">
+	<div class = "container">
+		<header>
+			<div class="row">
+				<h2 class="col-lg-1 col-centered"> <a href="#/"> Light Your Mind Trust</a> </h2>
+			</div>
+			
+			<nav class="navbar navbar-default">
+
+				<ul class="nav navbar-nav">
+					<li><a href="#/">About</a></li>
+					<li><a href="#/organizations/">Organizations</a></li>
+					<li><a href="#/about">Cases</a></li>
+					<li><a href="#/about">Statistics</a></li>
+				</ul>
+			</nav>  
+		</header>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="list-group">
+					<a href="#/" 	  class="list-group-item ">ABOUT</a>
+					<a href="#/organizations/" class="list-group-item "> ORGANIZATIONS</a>
+					<a href="#/signup" class="list-group-item ">SIGNUP</a>
+					<a href="#/login" class="list-group-item "> LOGIN</a>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<main data-ng-view></main> 
+			</div>
+
+		</div>
+	</div>
+
+	
+	
+
+  <script src="bundle.js"></script>
+</body>
+</html>
